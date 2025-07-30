@@ -47,6 +47,8 @@ func ConnectDatabase() (*gorm.DB, error) {
 	}
 	DB = database
 
+	log.Println("Connect database complete")
+
 	return DB, nil
 }
 
